@@ -1,0 +1,23 @@
+<Project>
+<Project>
+    <PropertyGroup>
+        <Authors>Gary Woodfine</Authors>
+        <TargetFramework>net8.0</TargetFramework>
+        <Title>Dotnet new Project and solution templates</Title>
+        <Description>A collection of solution, project and item templates</Description>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>dotnet, dotnet new, template</PackageTags>
+        <RepositoryUrl>https://github.com/threenine/dotnet-templates</RepositoryUrl>
+        <Copyright>Copyright © $([System.DateTime]::Now.ToString("yyyy")) Three Nine Consulting Limited</Copyright>
+        <PackageProjectUrl>https://threenine.co.uk</PackageProjectUrl>
+        <license>https://github.com/threenine/dotnet-templates/blob/master/LICENSE</license>
+        <PackageIcon>icon.png</PackageIcon>
+        <Version></Version>
+    </PropertyGroup>
+    <ItemGroup>
+        <Content Include="$(MSBuildThisFileDirectory)icon.png" Pack="true" PackagePath="/">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+</Project>
+</Project>
