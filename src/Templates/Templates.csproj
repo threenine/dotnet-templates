@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <IsPackable>true</IsPackable>
+    <PackageId>Threenine.Dotnet.Templates</PackageId>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <EnableDefaultContenThreetItems>false</EnableDefaultContenThreetItems>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+  </PropertyGroup>
+  
+  <ItemGroup Label="Threenine.Dotnet.Templates">
+    <Content Include="Database\**\*" Exclude="Database\DatabaseProject\bin\**;Database\DatabaseProject\obj\**;Models\bin\**;Models\obj\**" />
+  </ItemGroup>
+</Project>
